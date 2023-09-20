@@ -1,0 +1,618 @@
+@font-face {
+    font-family: sf-ui;
+    src: url("./fonts/SFUIText-Regular.ttf");
+}
+
+@font-face {
+    font-family: sf-ui-grande;
+    src: url("./fonts/SFUIText-Heavy.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sf-ui;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+header {
+    width: auto;
+    background-color: #4831D4;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container_navbar {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_navbar a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.container_navbar a:hover {
+    color: #FF00B8;
+}
+
+.container_navbar a p {
+    font-weight: bold;
+}
+
+#nome_pessoal {
+    margin-left: 300px;
+    font-size: 50px; 
+    color: #CCF381; 
+}
+
+#nome_pessoal p{
+    font-family: sf-ui-grande;
+    font-weight: bold;
+}
+
+#nome_pessoal:hover {
+    color: #FF00B8;
+}
+
+.ancoras {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 300px;
+}
+
+.ancoras a {
+    margin-left: 19px;
+    color: #CCF381; 
+    font-size: 20px;
+}
+
+#hero {
+    min-height: 100vh;
+    background-color: #4831D4;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_hero {
+    min-width: 1246px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#foto_hero {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+    object-fit: cover;
+}
+
+.elemento-foto {
+    z-index: 4;
+}
+
+.me_conheca {
+    display: flex;
+    flex-direction: column;
+}
+
+.me_conheca h1 {
+    font-size: 80px;
+    color: #CCF381;
+    font-weight: bold;
+    max-width: 500px;
+    font-family: sf-ui-grande;
+}
+
+#botao_me_conheca {
+    width: 230px;
+    height: 60px;
+    background-color: #FF00B8;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 19px;
+    font-family: sf-ui-grande;
+}
+
+#sobre_mim {
+    min-height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_sobre {
+    max-width: 1250px;
+    min-height: 650px;
+    background-color: #4831D4;
+    box-shadow: 11px 15px 4px 0px #CCF381; 
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#foto_praia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto_sobre h1 {
+    font-size: 50px; 
+    color: #CCF381;
+    font-weight: bold;
+    font-family: sf-ui-grande;
+}
+
+.texto_sobre p {
+    margin-top: 60px;
+    width: 80%;
+    font-size: 20px; 
+    color: white;
+}
+
+#curiosidades {
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    margin: 200px 0px;
+}
+
+.container_curiosidades {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.num_cinco {
+    display: flex;
+    align-items: center;
+}
+
+#cinco {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #CCF381;
+    color: #4831D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cinco h1 {
+    font-size: 130px;
+    font-family: sf-ui-grande;
+}
+
+#titulo_curiosidades {
+    font-size: 40px; 
+    color: #4831D4;
+    margin-left: 20px;
+    font-family: sf-ui-grande;
+}
+
+.container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.cards_curiosidades {
+    margin-right: 1px;
+    width: 410px;
+    height: 600px;
+    background-color: #4831D4;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards_curiosidades img {
+    max-width: 380px;
+    max-height: 458px;
+    object-fit: cover;
+}
+
+
+.cards_curiosidades figcaption {
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.num_curiosidades {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #CCF381;
+    color: #4831D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cards_curiosidades figure{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#educacao {
+    min-height: 1100px;
+    background-color: #4831D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#educacao h1 {
+    font-size: 50px; 
+    color: #CCF381;
+    font-family: sf-ui-grande;
+}
+
+.linha_educacao {
+    background-color: #FF00B8;
+    width: 700px;
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.para_baixo, .para_cima{
+    width: 15px;
+    height: 30px;
+    background-color: #CCF381;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto_educacao {
+    margin-top: 80px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 50;
+    transition: .5s;
+}
+
+.texto_educacao:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.texto_educacao_cima {
+    margin-top: -80px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 50;
+    transition: .5s;
+}
+
+.texto_educacao_cima:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.ano_escola {
+    font-weight: bold;
+}
+
+.para_cima {
+    margin-top: -15px;
+}
+
+#causos {
+    min-height: 1100px;
+    background-color: #CCF381;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_causos {
+    width: 1250px;
+    min-height: 730px;
+    background-color: white;
+    border: 3px solid #FF00B8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_sem_fundo {
+    margin-left: -300px;
+}
+
+.card_causos {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin-left: 50px;
+}
+
+.card_causos h1 {
+    color: #FF00B8;
+    text-align: center;
+    font-size: 50px;
+    font-family: sf-ui-grande;
+}
+
+.card_causos p{
+    color: #4831D4;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#habilidades {
+    min-height: 1100px;
+    background-color: #4831D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#habilidades h1 {
+    font-size: 50px;
+    color: #CCF381;
+    font-family: sf-ui-grande;
+}
+
+.container_habilidades {
+    display: flex;
+    margin-top: 150px;
+}
+
+.card_habilidades img{
+    margin-right: 20px;
+    border: 14px solid #FF00B8;
+    border-radius: 20px;
+}
+
+.card_habilidades figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.card_habilidades figcaption {
+    color: white;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: sf-ui-grande;
+}
+
+#contato {
+    min-height: 500px;
+    background-color: #3D155F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_footer h1 {
+    font-family: sf-ui-grande;
+    font-size: 40px;
+    color: #CCF381;
+    text-align: center;
+}
+
+.container_footer i {
+    font-size: 80px;
+    color: #CCF381;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1246px){
+    header {
+        height: 100px;
+    }
+
+    #nome_pessoal {
+        margin-left: 100px;
+    }
+
+    .ancoras {
+        margin-right: 100px;
+    }
+
+    .ancoras a p {
+        font-size: 26px;
+    }
+
+    .container_hero {
+        min-width: 0px;
+        flex-direction: column;
+    }
+
+    .me_conheca h1 {
+        font-size: 80px;
+    }
+
+    #botao_me_conheca {
+        width: 500px;
+        height: 120px;
+        font-size: 26px;
+    }
+
+    #foto_hero {
+        width: 500px;
+        height: 500px;
+        margin-top: 70px;
+    }
+
+    #botao_me_conheca {
+        text-align: center;
+
+    }
+
+    .me_conheca {
+        align-items: center;
+
+    }
+
+    .me_conheca h1 {
+        text-align: center;
+    }
+
+    .container_sobre {
+        margin: 0px 40px;
+    }
+
+    #foto_praia {
+        margin-top: 20px;
+    }
+
+    .texto_sobre {
+        margin-bottom: 20px;
+    }
+
+    .container_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cinco {
+        width: 120px;
+        height: 120px;
+    }
+
+    #cinco h1 {
+        font-size: 100px;
+    }
+
+    #titulo_curiosidades {
+        font-size: 32px;
+    }
+
+    #educacao h1 {
+        font-size: 80px;
+    }
+
+    .linha_educacao {
+        margin-top: 250px;
+    }
+
+    .texto_educacao {
+        font-size: 32px;
+        margin-top: 120px;
+    }
+
+    .texto_educacao_cima {
+        font-size: 32px;
+        margin-top: -120px;
+    }
+
+    .cards_curiosidades {
+        transform: scale(1.5);
+        margin-top: 350px;
+    }
+
+    .cards_curiosidades:nth-child(1) {
+        margin-top: 200px;
+    }
+
+    .container_causos {
+        min-height: 1000px;
+        flex-direction: column;
+        margin: 40px 50px
+    }
+
+    .foto_sem_fundo {
+        margin-left: 0px;
+    }
+
+    .card_causos {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .card_causos p {
+        font-size: 32px;
+        margin: 50px 0px;
+    }
+
+    #habilidades h1{
+        font-size: 80px;
+        margin-top: 50px;
+    }
+
+    .container_habilidades {
+        flex-direction: column;
+        margin: 80px 0px;
+    }
+
+    .container_habilidades figcaption {
+        margin-bottom: 150px;
+        margin-top: 70px;
+        font-size: 50px;
+    }
+
+    .card_habilidades img {
+        transform: scale(1.5);
+        object-fit: cover;
+    }
+
+    .container_footer h1 {
+        font-size: 60px;
+    }
+    
+    .container_footer i {
+        font-size: 100px;
+    }
+}
